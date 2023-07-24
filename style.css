@@ -16,7 +16,7 @@ body{
 
 .Services-wrapper{
     display: flex;
-    max-width: 1140px;    
+    max-width: 90vw;    
     /* برای اینکه رسپانسیو راحت تر بشه از این مقدار استفاده میشه */
     margin: 0 auto;
     padding: 64px 0;
@@ -118,9 +118,32 @@ body{
 }
 
 /* *****************Responsive********************** */
-@media screen and{
+@media screen and (max-width:1200px){
     .Services-wrapper{
-        max-width: 1200px;
+        max-width: 90vw;
+    
+    }
+    
+}
+
+
+@media screen and (max-width:1170px) {
+    .Services-wrapper{
+        flex-wrap: wrap;
+        max-width: 88vw;
+    }
+    .Services-wrapper > div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:581px){
+    .Services-wrapper{
+        max-width: 85vw;
+
+    } 
+       .box-service{
+        width: 100%;
     }
     
 }
